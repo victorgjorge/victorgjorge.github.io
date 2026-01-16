@@ -471,6 +471,76 @@ body {
     display: block;
 }
 
+/* Video Preview Card */
+.video-preview {
+    margin: 24px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: border-color 0.3s;
+}
+
+.video-preview:hover {
+    border-color: var(--primary);
+}
+
+.video-preview-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.video-preview-thumb {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.7);
+    transition: filter 0.3s;
+}
+
+.video-preview-link:hover .video-preview-thumb {
+    filter: brightness(0.5);
+}
+
+.video-preview-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.video-preview-play {
+    width: 70px;
+    height: 70px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-preview-link:hover .video-preview-play {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(122, 0, 223, 0.6);
+}
+
+.video-preview-text {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .case-details {
     list-style: none;
     margin-bottom: 32px;
