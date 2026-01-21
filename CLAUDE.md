@@ -32,11 +32,16 @@ assets/
 
 ### CSS Design System
 
+**Typography**: Google Fonts - Fraunces (serif headlines) + DM Sans (body text)
+
 Color variables defined in `:root`:
-- `--primary`: Purple (#7a00df)
-- `--accent`: Cyan (#00d4ff)
-- `--accent-warm`: Orange (#ff6b35)
-- `--bg-*`: Dark background variants
+- `--primary`: Terracotta (#c45d3e) - warm, grounded accent
+- `--accent`: Warm gold (#c9a227) - sophisticated secondary
+- `--bg`: Warm off-white (#faf8f5)
+- `--bg-dark`: Near-black (#1a1a1a) for dark sections
+- `--text`: Near-black (#1a1a1a)
+
+**Layout**: Editorial-style with asymmetric hero grid, CSS Grid for responsive layouts
 
 ### JavaScript
 

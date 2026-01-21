@@ -181,8 +181,9 @@ h1, h2, .hero-headline, .case-detail-title, .case-block-title {
 }
 
 .hero-grid {
-    width: 100%;
-    padding: 0 48px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
@@ -432,8 +433,8 @@ h1, h2, .hero-headline, .case-detail-title, .case-block-title {
 
 /* Sections */
 .section {
-    min-height: 100vh;
-    padding: 120px 32px;
+    min-height: auto;
+    padding: 80px 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -450,7 +451,7 @@ h1, h2, .hero-headline, .case-detail-title, .case-block-title {
     border: none;
 }
 
-.section-skills h2 {
+.section.section-skills h2 {
     color: var(--text-on-dark);
 }
 
@@ -664,7 +665,7 @@ h1, h2, .hero-headline, .case-detail-title, .case-block-title {
 }
 
 #impact h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: 2.5rem;
 }
 
 /* Case Studies Grid */
@@ -1006,6 +1007,10 @@ h1, h2, .hero-headline, .case-detail-title, .case-block-title {
 .accordion-content .case-block:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
+}
+
+.accordion-content .case-block-highlight:last-child {
+    padding-bottom: 40px;
 }
 
 @media (max-width: 768px) {
@@ -2094,7 +2099,6 @@ h1, h2, .hero-headline, .case-detail-title, .case-block-title {
 /* References Section */
 .section#references {
     min-height: auto;
-    padding: 80px 32px;
     display: block;
 }
 
@@ -2169,7 +2173,7 @@ h1, h2, .hero-headline, .case-detail-title, .case-block-title {
     background: var(--bg-dark);
     color: var(--text-on-dark);
     text-align: center;
-    padding: 120px 32px;
+    padding: 80px 32px;
 }
 
 .section-cta h2 {
@@ -2267,7 +2271,7 @@ h1, h2, .hero-headline, .case-detail-title, .case-block-title {
 
     .section {
         min-height: auto;
-        padding: 80px 20px;
+        padding: 60px 20px;
     }
 
     .section h2 {
