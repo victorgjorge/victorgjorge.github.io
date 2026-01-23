@@ -2042,6 +2042,51 @@ body {
     border-color: var(--primary);
 }
 
+.reference-card a:has(.reference-photo-link) {
+    position: relative;
+    display: block;
+    margin: 0 auto 16px auto;
+    width: fit-content;
+}
+
+.reference-card a:has(.reference-photo-link) .reference-photo {
+    margin-bottom: 0;
+}
+
+.reference-card a:has(.reference-photo-link)::after {
+    content: '▶';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+    background: rgba(122, 0, 223, 0.85);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+    padding-left: 3px;
+}
+
+.reference-card a:has(.reference-photo-link):hover::after {
+    opacity: 1;
+}
+
+.reference-photo-link {
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.3s;
+}
+
+.reference-photo-link:hover {
+    transform: scale(1.05);
+    border-color: var(--primary);
+}
+
 .reference-card h4 {
     font-size: 1.15rem;
     color: var(--text);
