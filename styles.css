@@ -170,7 +170,7 @@ h1, h2, .hero-headline, .case-detail-title, .case-block-title {
 
 /* Hero Section - Editorial Layout */
 .hero {
-    min-height: 100vh;
+    min-height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -823,6 +823,7 @@ h1, h2, .hero-headline, .case-detail-title, .case-block-title {
     color: var(--text-muted);
     max-width: 600px;
     line-height: 1.7;
+    margin-top: 20px;
 }
 
 .case-detail-content {
