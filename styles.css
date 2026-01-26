@@ -774,6 +774,10 @@ h1, h2, .hero-headline, .case-detail-title, .case-block-title {
     border-bottom: 1px solid var(--border);
 }
 
+.case-detail-hero .container {
+    max-width: 800px;
+}
+
 .back-link {
     display: inline-block;
     color: var(--text-muted);
